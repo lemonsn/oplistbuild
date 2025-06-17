@@ -3,7 +3,7 @@ name: Daily Docker AIO Build
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # 每天UTC时间0:00运行
+    - cron: '0 21 * * *'  # 每天UTC时间0:00运行
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
